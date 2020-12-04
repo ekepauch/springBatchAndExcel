@@ -1,9 +1,15 @@
 package com.techshard.batch.services;
 
 import com.techshard.batch.utils.Response;
+import org.springframework.batch.core.Job;
+import org.springframework.batch.core.JobParameters;
+import org.springframework.batch.core.JobParametersBuilder;
+import org.springframework.batch.core.launch.JobLauncher;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -19,7 +25,11 @@ public class VoltageService {
     String externalResourceLocation;
 
 
+    @Autowired
+    JobLauncher jobLauncher;
 
+    @Autowired
+    Job job;
 
 
 
@@ -62,5 +72,18 @@ public class VoltageService {
 
         return new ResponseEntity<>(resp, HttpStatus.ACCEPTED);
     }
+
+
+    // batch job will run every one minute after application is started.
+    @Scheduled(cron = "0 */1 * * * ?")
+    public void perform() throws Exception
+    {
+        System.out.println(":::::: RUNNING SCHEDULE ::::::");
+        JobParameters params = new JobParametersBuilder()
+                .addString("JobID", String.valueOf(System.currentTimeMillis()))
+                .toJobParameters();
+        jobLauncher.run(job, params);
+    }
+
 
 }

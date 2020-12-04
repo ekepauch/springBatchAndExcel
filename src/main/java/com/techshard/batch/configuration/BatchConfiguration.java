@@ -9,16 +9,13 @@ import org.springframework.batch.core.configuration.annotation.JobBuilderFactory
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
 import org.springframework.batch.core.launch.JobLauncher;
 import org.springframework.batch.core.launch.support.RunIdIncrementer;
-import org.springframework.batch.core.launch.support.SimpleJobLauncher;
-import org.springframework.batch.core.repository.JobExecutionAlreadyRunningException;
-import org.springframework.batch.core.repository.JobInstanceAlreadyCompleteException;
-import org.springframework.batch.core.repository.JobRestartException;
 import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.database.BeanPropertyItemSqlParameterSourceProvider;
 import org.springframework.batch.item.database.JdbcBatchItemWriter;
 import org.springframework.batch.item.database.builder.JdbcBatchItemWriterBuilder;
 import org.springframework.batch.item.file.FlatFileItemReader;
 import org.springframework.batch.item.file.LineMapper;
+import org.springframework.batch.item.file.MultiResourceItemReader;
 import org.springframework.batch.item.file.builder.FlatFileItemReaderBuilder;
 import org.springframework.batch.item.file.mapping.BeanWrapperFieldSetMapper;
 import org.springframework.batch.item.file.mapping.DefaultLineMapper;
@@ -50,11 +47,10 @@ public class BatchConfiguration {
     public StepBuilderFactory stepBuilderFactory;
 
 
-//    @Autowired
-//    JobLauncher jobLauncher;
-//
-//    @Autowired
-//    Job job;
+
+
+
+
 
     @Value("${batch.file}")
     String batchFile;
@@ -78,8 +74,43 @@ public class BatchConfiguration {
 
 
 
-
-
+//    @Bean
+//    public MultiResourceItemReader<Voltage> multiResourceItemReader()
+//    {
+//        MultiResourceItemReader<Voltage> resourceItemReader = new MultiResourceItemReader<Voltage>();
+//        resourceItemReader.setResources(inputResources);
+//        resourceItemReader.setDelegate(reader());
+//        return resourceItemReader;
+//    }
+//
+//
+//    @SuppressWarnings({ "rawtypes", "unchecked" })
+//    @Bean
+//    public FlatFileItemReader<Voltage> reader()
+//    {
+//        // Create reader instance
+//        FlatFileItemReader<Voltage> reader = new FlatFileItemReader<Voltage>();
+//        // Set number of lines to skips. Use it if file has header rows.
+//        reader.setLinesToSkip(1);
+//        // Configure how each line will be parsed and mapped to different values
+//        reader.setLineMapper(new DefaultLineMapper() {
+//            {
+//                // 2 columns in each row
+//                setLineTokenizer(new DelimitedLineTokenizer() {
+//                    {
+//                        setNames(new String[] {"volt", "time"});
+//                    }
+//                });
+//                // Set values in Voltage class
+//                setFieldSetMapper(new BeanWrapperFieldSetMapper<Voltage>() {
+//                    {
+//                        setTargetType(Voltage.class);
+//                    }
+//                });
+//            }
+//        });
+//        return reader;
+//    }
 
 
     @Bean
@@ -132,6 +163,7 @@ public class BatchConfiguration {
                 .incrementer(new RunIdIncrementer())
                 .listener(listener)
                 .flow(step1)
+               // .next(step2)
                 .end()
                 .build();
     }
@@ -141,8 +173,23 @@ public class BatchConfiguration {
         return stepBuilderFactory.get("step1")
                 .<Voltage, Voltage> chunk(10)
                 .reader(reader())
+                //.reader(multiResourceItemReader())
                 .processor(processor())
                 .writer(writer)
                 .build();
     }
+
+
+//    @Bean
+//    public Step step2() {
+//        FileDeletingTasklet task = new FileDeletingTasklet();
+//        task.setResources(inputResources);
+//        return stepBuilderFactory.get("step2")
+//                .tasklet(task)
+//                .build();
+//    }
+
+
+
+
 }

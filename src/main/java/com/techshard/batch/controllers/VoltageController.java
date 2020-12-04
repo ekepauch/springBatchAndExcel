@@ -5,11 +5,16 @@ import com.techshard.batch.exceptions.ConflictException;
 import com.techshard.batch.services.VoltageService;
 import com.techshard.batch.utils.CustomResponseCode;
 import com.techshard.batch.utils.Response;
+import org.springframework.batch.core.Job;
+import org.springframework.batch.core.JobParameters;
+import org.springframework.batch.core.JobParametersBuilder;
+import org.springframework.batch.core.launch.JobLauncher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -26,7 +31,11 @@ import java.nio.file.Paths;
 @RequestMapping(value = "/api")
 public class VoltageController {
 
-
+//    @Autowired
+//    JobLauncher jobLauncher;
+//
+//    @Autowired
+//    Job job;
 
     @Autowired
     VoltageService voltageService;
@@ -54,7 +63,6 @@ public class VoltageController {
 
         return new ResponseEntity<>(resp, HttpStatus.ACCEPTED);
     }
-
 
 
 
