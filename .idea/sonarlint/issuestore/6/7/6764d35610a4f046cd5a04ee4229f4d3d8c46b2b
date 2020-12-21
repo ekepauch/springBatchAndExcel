@@ -1,0 +1,8 @@
+
+^squid:UselessImportCheck"0Remove this unused import 'java.io.IOException'.(ªº»Úýÿÿÿÿ8÷õâ—æ.
+Ysquid:UselessImportCheck"0Remove this unused import 'java.nio.file.Paths'.(áè°¯8÷õâ—æ.
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ƒ¨í÷8÷õâ—æ.
+Xsquid:UselessImportCheck"/Remove this unused import 'java.nio.file.Path'.(×²êÂ8÷õâ—æ.
+Ysquid:UselessImportCheck"0Remove this unused import 'java.nio.file.Files'.(‚ƒü8÷õâ—æ.
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ú°à¬8÷õâ—æ.
+nsquid:UselessImportCheck"ERemove this unused import 'java.nio.file.FileAlreadyExistsException'.(¥ß×³8÷õâ—æ.

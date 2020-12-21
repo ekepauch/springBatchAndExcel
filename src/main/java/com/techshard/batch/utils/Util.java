@@ -1,14 +1,19 @@
 package com.techshard.batch.utils;
 
+import org.springframework.util.ResourceUtils;
+
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
+import java.io.File;
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.nio.file.Files;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.util.Random;
@@ -208,6 +213,7 @@ String encKey = "a0c74ee5987324d9ecd30ce4a728f559";
         }
         return validFormat;
     }
+
 
 
 

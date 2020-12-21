@@ -1,0 +1,25 @@
+
+osquid:S2095"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(êëô¡úÿÿÿÿ8ÀÁ Ìæ.
+lsquid:UselessImportCheck"CRemove this unused import 'com.techshard.batch.dao.entity.Voltage'.(ÙÑ¤Å8ÀÁ Ìæ.
+osquid:UselessImportCheck"ARemove this unused import 'org.springframework.data.domain.Page'.(˜âüÿÿÿÿ8ÀÁ Ìæ.
+Xsquid:UselessImportCheck"/Remove this unused import 'java.util.Calendar'.(ÿÛö´8ÀÁ Ìæ.
+ssquid:UselessImportCheck"ERemove this unused import 'org.springframework.data.domain.Pageable'.(‡ë‚Öıÿÿÿÿ8ÀÁ Ìæ.
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(“Ú“ùÿÿÿÿ8ÀÁ Ìæ.
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(±é·½ûÿÿÿÿ8ÀÁ Ìæ.
+Gsquid:S1452"&Remove usage of generic wildcard type.(‹ƒÚıÿÿÿÿ8ÀÁ Ìæ.
+Zsquid:S1854"9Remove this useless assignment to local variable "bytes".(¹ Ûÿıÿÿÿÿ8ÀÁ Ìæ.
+Rsquid:S1854"6Remove this useless assignment to local variable "ft".(ı”©½8ÀÁ Ìæ.
+Tsquid:S1854"8Remove this useless assignment to local variable "dNow".(Ë™‹¢8ÀÁ Ìæ.
+]squid:S1854"<Remove this useless assignment to local variable "httpCode".(ûûÛ˜şÿÿÿÿ8ÀÁ Ìæ.
+Gsquid:S1075"&Remove this hard-coded path-delimiter.(ßÿËÑÿÿÿÿÿ8ÀÁ Ìæ.
+]
+squid:S899"BDo something with the "boolean" value returned by "createNewFile".(¼äëš8ÀÁ Ìæ.
+Nsquid:S1481"-Remove this unused "httpCode" local variable.(ûûÛ˜şÿÿÿÿ8ÀÁ Ìæ.
+Isquid:S1481"-Remove this unused "fullDate" local variable.(ëÇ±°8ÀÁ Ìæ.
+Esquid:S1481")Remove this unused "dNow" local variable.(Ë™‹¢8ÀÁ Ìæ.
+Csquid:S1481"'Remove this unused "ft" local variable.(ı”©½8ÀÁ Ìæ.
+Ksquid:S1481"*Remove this unused "bytes" local variable.(¹ Ûÿıÿÿÿÿ8ÀÁ Ìæ.
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ú°à¬8ÀÁ Ìæ.
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ƒ¨í÷8ÀÁ Ìæ.

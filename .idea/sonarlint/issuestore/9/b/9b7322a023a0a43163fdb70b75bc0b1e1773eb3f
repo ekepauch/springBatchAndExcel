@@ -1,0 +1,14 @@
+
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ú°à¬8¼ˆ©Íæ.
+hsquid:S3305"LInject this field value directly into "step1", the only method that uses it.(ô‚àË8¼ˆ©Íæ.
+ssquid:S3305"WInject this field value directly into "importVoltageJob", the only method that uses it.(ÿ£î°8¼ˆ©Íæ.
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(·ºÝ¢úÿÿÿÿ8¼ˆ©Íæ.
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ñ’Ëî8¼ˆ©Íæ.
+usquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ßÖá¶8¼ˆ©Íæ.
+Ysquid:S3878"8Remove this array creation and simply pass the elements.(Ùˆñçúÿÿÿÿ8¼ˆ©Íæ.
+Ksquid:S1068"*Remove this unused "logger" private field.(²ýŸöøÿÿÿÿ8¼ˆ©Íæ.
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‚ê½’úÿÿÿÿ8¼ˆ©Íæ.
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¶ôð8¼ˆ©Íæ.
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ú°à¬8¼ˆ©Íæ.
+fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(·¼Æh8¼ˆ©Íæ.
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(…ÃõÏÿÿÿÿÿ8¼ˆ©Íæ.

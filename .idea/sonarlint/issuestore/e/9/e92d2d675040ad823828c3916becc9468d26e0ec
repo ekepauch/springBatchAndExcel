@@ -1,0 +1,9 @@
+
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Úüºæùÿÿÿÿ8¢á¡Ìæ.
+\squid:S3457"AFormat specifiers should be used instead of string concatenation.(îÅä^8¢á¡Ìæ.
+{squid:UselessImportCheck"RRemove this unused import 'com.techshard.batch.dao.repository.IVoltageRepository'.(µ¿¹¶8™˜£Ìæ.
+ssquid:UselessImportCheck"ERemove this unused import 'org.springframework.data.domain.Pageable'.(‡ë‚Öýÿÿÿÿ8¢á¡Ìæ.
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8¢á¡Ìæ.
+‹squid:UselessImportCheck"]Remove this unused import 'org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor'.(’Úë¥ùÿÿÿÿ8¢á¡Ìæ.
+vsquid:UselessImportCheck"HRemove this unused import 'com.techshard.batch.services.VoltageService'.(©‹ŠŸøÿÿÿÿ8™˜£Ìæ.
+Ssquid:S1135"2Complete the task associated to this TODO comment.(××˜üÿÿÿÿ8¢á¡Ìæ.

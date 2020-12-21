@@ -1,0 +1,20 @@
+
+~squid:UselessImportCheck"PRemove this unused import 'org.springframework.scheduling.annotation.Scheduled'.(‚¡®Üûÿÿÿÿ8òŽ Ìæ.
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(×¿Óñ8òŽ Ìæ.
+]squid:S1854"<Remove this useless assignment to local variable "httpCode".(ûûÛ˜þÿÿÿÿ8òŽ Ìæ.
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(øéûä8òŽ Ìæ.
+fsquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(®ìÿ‚8òŽ Ìæ.
+rsquid:UselessImportCheck"IRemove this unused import 'org.springframework.batch.core.JobParameters'.(„Øº¬8òŽ Ìæ.
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(²þìÌ8òŽ Ìæ.
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(›é™…8òŽ Ìæ.
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Á¸Ëªûÿÿÿÿ8òŽ Ìæ.
+Nsquid:S1481"-Remove this unused "httpCode" local variable.(ûûÛ˜þÿÿÿÿ8òŽ Ìæ.
+~squid:UselessImportCheck"PRemove this unused import 'org.springframework.batch.core.JobParametersBuilder'.(åÊ•Áùÿÿÿÿ8òŽ Ìæ.
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ŒÄ¿ü8òŽ Ìæ.
+xsquid:UselessImportCheck"ORemove this unused import 'org.springframework.beans.factory.annotation.Value'.(ìø›8òŽ Ìæ.
+ssquid:UselessImportCheck"ERemove this unused import 'org.springframework.data.domain.Pageable'.(‡ë‚Öýÿÿÿÿ8òŽ Ìæ.
+Asquid:S1452"&Remove usage of generic wildcard type.(âÍ~8òŽ Ìæ.
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Öàâù8òŽ Ìæ.
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(“÷Œµ8òŽ Ìæ.
+\squid:S1854";Remove this useless assignment to local variable "voltage".(Í¤…•þÿÿÿÿ8òŽ Ìæ.
+Msquid:S1481",Remove this unused "voltage" local variable.(Í¤…•þÿÿÿÿ8òŽ Ìæ.
